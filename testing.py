@@ -20,6 +20,11 @@ GRAPHS_N = hamiltonian_graphs_data["info"]["graphs_n"]
 
 print(f"{NODES_N=}\n{GRAPHS_N=}\n")
 
+for graphs_data in (hamiltonian_graphs_data, non_hamiltonian_graphs_data):
+    graphs = graphs_data["graphs"]
+    for i in range(0, len(graphs)):
+        graphs[i] = [[int(x) for x in y] for y in graphs[i]]
+
 hamiltonian_graphs, non_hamiltonian_graphs = (
     hamiltonian_graphs_data["graphs"],
     non_hamiltonian_graphs_data["graphs"],

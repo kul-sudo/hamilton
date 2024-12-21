@@ -2,6 +2,7 @@ from tensorflow.keras.callbacks import Callback
 from pandas import DataFrame
 import matplotlib.pyplot as plt
 
+
 class HistorySaver(Callback):
     def __init__(self):
         super(HistorySaver, self).__init__()

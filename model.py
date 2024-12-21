@@ -1,6 +1,7 @@
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dropout, Flatten, Dense, BatchNormalization
 
+
 def create_model(nodes_n):
     return Sequential(
         [
